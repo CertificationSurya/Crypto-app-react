@@ -15,7 +15,6 @@ const Cryptocurrencies = ({ simplified = false }) => {
   const [cryptos, setCryptos] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
 
-  console.log(cryptos)
   // use Effect
   // when text(in Input field)/cryptoList(fetched response) changes. change the actual viewing Crypto
   useEffect(() => {

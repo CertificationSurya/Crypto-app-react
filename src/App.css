@@ -14,6 +14,12 @@
   box-sizing: border-box;
 }
 
+/* A utility class */
+.text-center{
+  text-align: center;
+  margin: auto;
+}
+
 a:hover{
   color: var(--pink) !important;
 }
@@ -54,7 +60,6 @@ footer{
   background-color: #001529;
   display: flex;
   padding: 20px;
-  align-items: center;
   width: 100%;
 }
 .logo{
@@ -80,22 +85,45 @@ footer{
   align-items: center;
 }
 
+.coin-options{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em 0;
+}
+
+table th{
+  text-align: center!important;
+}
+
+
+
 @media screen and (max-width:1300px){
   .main{
-      margin-left: 50px;
+    margin-left: 50px;
   }
 }
 
 @media screen and (max-width:1170px){
   .main{
-      margin-left: 50px;
+    margin-left: 50px;
   }
+
 }
 
 @media screen and (max-width:1000px){
   .main{
       margin-left: 100px;
   }
+  .coin-options{
+    flex-direction: column;
+  }
+  
+.select-timeperiod, .select-exchanges{
+  align-self: center;
+}
+.select-exchanges{
+  margin-right: 5em;
+}
 }
 
 @media screen and (max-width:800px){
@@ -370,7 +398,7 @@ width: 70%;
 .crypto-card .crypto-image{
   width:35px;
 }
-.select-timeperiod{
+.select-timeperiod, .select-exchanges{
   width: 200px !important;
   margin-top: 20px !important;
 }

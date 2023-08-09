@@ -19,7 +19,7 @@ const Navbar = () => {
     }, [])
 
     useEffect(() => {
-        if (screenSize < 768) {
+        if (screenSize < 802) {
             setActiveMenu(false);
         }
         else setActiveMenu(true)
@@ -32,7 +32,7 @@ const Navbar = () => {
                 {/* from antd */}
                 <Avatar src={icon} size="large" />
                 <Typography.Title level={2} className='logo'>
-                    <Link to="/">Cryptoverse</Link>
+                    <Link to="/">CryptoApp</Link>
                 </Typography.Title>
             </div>
 

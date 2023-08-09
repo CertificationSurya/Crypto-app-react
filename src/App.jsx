@@ -22,9 +22,9 @@ function App() {
               <Routes>
                 <Route exact path="/" element={<Homepage />} />
 
-                <Route exact path="/exchanges" element={<Exchanges />} />
-
                 <Route exact path="/cryptocurrencies" element={<Cryptocurrencies />} />
+
+                <Route path="/exchanges/:coinId?" element={<Exchanges />} />
 
                 <Route exact path="/crypto/:coinId" element={<CryptoDetails />} />
 
