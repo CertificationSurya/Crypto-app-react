@@ -4,10 +4,8 @@ import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 
 const override ={
-  position: "absolute",
-  left: "50%",
-  top: "50%",
-  transform: "translate(-50%,-50%)",
+  position: "relative",
+  margin: 'auto',
   borderColor: "red",
 };
 
@@ -24,7 +22,7 @@ function Loader() {
     }
 
     generate();
-    const interval = setInterval(generate, 2500);
+    const interval = setInterval(generate, 625);
     return () => clearInterval(interval)
 
   }, []);
